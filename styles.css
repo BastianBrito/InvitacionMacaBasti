@@ -1,8 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
 }
+
 /* Sección de Bienvenida */
 .bienvenida-container {
     position: relative;
@@ -14,11 +15,12 @@ body{
     overflow: hidden;
 }
 
-.bg-invitation{
+.bg-invitation {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+    filter: brightness(40%);
+    /* Oscurece la imagen para resaltar el contenido */
 }
 
 .bienvenida-overlay {
@@ -30,31 +32,39 @@ body{
 }
 
 /* Nombres "Macarena & Bastián" (Fuente Lavishly Yours) */
-#bienvenida p:nth-child(2) {
-    font-size: 4.2rem;
+#bienvenida p {
+    font-size: 2.6rem;
     font-family: 'Lavishly Yours', cursive;
 }
 
+.nombres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 /* Sección de Fecha */
-.fecha-container{
+.fecha-container {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
-.bg-gray{
+.bg-gray {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(70%); /* Oscurece la imagen para resaltar el contenido */
+    filter: brightness(70%);
+    /* Oscurece la imagen para resaltar el contenido */
 }
 
-.fecha-overlay{
+.fecha-overlay {
     position: absolute;
     text-align: center;
     color: white;
@@ -83,7 +93,8 @@ body{
     font-size: 5rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    color: #e4c9a3; /* Beige pastel */
+    color: #e4c9a3;
+    /* Beige pastel */
     display: block;
     margin: 10px 0;
 }
@@ -106,7 +117,7 @@ body{
 }
 
 /* Sección de Ubicación */
-.ubicacion-container{
+.ubicacion-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -116,29 +127,33 @@ body{
     overflow: hidden;
 }
 
-.bg-ubicacion{
+.bg-ubicacion {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+    filter: brightness(40%);
+    /* Oscurece la imagen para resaltar el contenido */
 }
 
-.ubicacion-overlay{
+.ubicacion-overlay {
     position: absolute;
     text-align: center;
     color: white;
     max-width: 80%;
 }
 
-.mapsicon-image{
+.mapsicon-image {
     width: 70px;
     height: 70px;
     margin: 0 auto;
 
 }
+
 .contact-us {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Subtle border */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -157,7 +172,8 @@ body{
     font-size: 1rem;
     font-family: 'Rubik', sans-serif;
     margin-bottom: 10px;
-    color: #e4c9a3; /* Beige pastel */
+    color: #e4c9a3;
+    /* Beige pastel */
 }
 
 .contact-us a {
@@ -172,10 +188,11 @@ body{
 }
 
 .contact-us a:hover {
-    color: #e4c9a3; /* Beige pastel */
+    color: #e4c9a3;
+    /* Beige pastel */
 }
 
-.dresscode-container{
+.dresscode-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -185,14 +202,15 @@ body{
     overflow: hidden;
 }
 
-.bg-dresscode{
+.bg-dresscode {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+    filter: brightness(40%);
+    /* Oscurece la imagen para resaltar el contenido */
 }
 
-.dresscode-overlay{
+.dresscode-overlay {
     position: absolute;
     text-align: center;
     color: white;
@@ -200,18 +218,21 @@ body{
 }
 
 .dresscode-text {
-    max-height: 6.6em; /* Approx. 3 lines of text */
+    max-height: 6.6em;
+    /* Approx. 3 lines of text */
     overflow-y: auto;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6; /* Limit to 3 lines */
+    -webkit-line-clamp: 6;
+    /* Limit to 3 lines */
     -webkit-box-orient: vertical;
-    line-height: 1.2em; /* Adjust line height */
+    line-height: 1.2em;
+    /* Adjust line height */
     word-wrap: break-word;
 }
 
 /* Sección de Regalos */
-.regalos-container{
+.regalos-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -221,14 +242,15 @@ body{
     overflow: hidden;
 }
 
-.bg-regalos{
+.bg-regalos {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+    filter: brightness(40%);
+    /* Oscurece la imagen para resaltar el contenido */
 }
 
-.regalos-overlay{
+.regalos-overlay {
     position: absolute;
     text-align: center;
     color: white;
@@ -236,8 +258,10 @@ body{
 }
 
 .regalos-overlay {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Subtle border */
     border-radius: 15px;
     padding: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -252,7 +276,8 @@ body{
 .regalos-overlay h2 {
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
-    color: #e4c9a3; /* Beige pastel */
+    color: #e4c9a3;
+    /* Beige pastel */
     margin-bottom: 15px;
 }
 
@@ -264,11 +289,12 @@ body{
 }
 
 .regalos-overlay p strong {
-    color: #e4c9a3; /* Beige pastel */
+    color: #e4c9a3;
+    /* Beige pastel */
 }
 
 
-.poti-container{
+.poti-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -277,14 +303,17 @@ body{
     align-items: center;
     overflow: hidden;
 }
-.bg-poti{
+
+.bg-poti {
     width: 300px;
     height: 300px;
     margin: auto;
 }
-.poti-overlay{
+
+
+.poti-overlay {
     position: absolute;
     text-align: center;
-    color: white;
+    color: black;
     max-width: 80%;
 }
