@@ -1,0 +1,290 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+/* Sección de Bienvenida */
+.bienvenida-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-invitation{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+}
+
+.bienvenida-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+    font-size: 1.5rem;
+}
+
+/* Nombres "Macarena & Bastián" (Fuente Lavishly Yours) */
+#bienvenida p:nth-child(2) {
+    font-size: 4.2rem;
+    font-family: 'Lavishly Yours', cursive;
+}
+
+
+/* Sección de Fecha */
+.fecha-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;   
+}
+
+.bg-gray{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%); /* Oscurece la imagen para resaltar el contenido */
+}
+
+.fecha-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+}
+
+/* Título "Te esperamos el día" */
+#fecha h2 {
+    font-size: 1.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* Día de la semana ("Viernes") */
+#fecha div span:nth-child(1) {
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Número del día ("14") */
+#fecha div p:nth-child(2) {
+    font-size: 5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #e4c9a3; /* Beige pastel */
+    display: block;
+    margin: 10px 0;
+}
+
+/* Mes y año ("de Noviembre del 2025") */
+#fecha div span:nth-child(3) {
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    display: block;
+}
+
+/* Hora de llegada */
+#fecha div:nth-child(3) span {
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Sección de Ubicación */
+.ubicacion-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-ubicacion{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+}
+
+.ubicacion-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+}
+
+.mapsicon-image{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+
+}
+.contact-us {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-us:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us h4 {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+    color: #e4c9a3; /* Beige pastel */
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-us a:hover {
+    color: #e4c9a3; /* Beige pastel */
+}
+
+.dresscode-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-dresscode{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+}
+
+.dresscode-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+}
+
+.dresscode-text {
+    max-height: 6.6em; /* Approx. 3 lines of text */
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    line-height: 1.2em; /* Adjust line height */
+    word-wrap: break-word;
+}
+
+/* Sección de Regalos */
+.regalos-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bg-regalos{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%); /* Oscurece la imagen para resaltar el contenido */
+}
+
+.regalos-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+}
+
+.regalos-overlay {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.regalos-overlay:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.regalos-overlay h2 {
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    color: #e4c9a3; /* Beige pastel */
+    margin-bottom: 15px;
+}
+
+.regalos-overlay p {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    margin: 5px 0;
+}
+
+.regalos-overlay p strong {
+    color: #e4c9a3; /* Beige pastel */
+}
+
+
+.poti-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.bg-poti{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+.poti-overlay{
+    position: absolute;
+    text-align: center;
+    color: white;
+    max-width: 80%;
+}
