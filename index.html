@@ -199,26 +199,21 @@
             <img src="bg-gift.png" alt="Imagen de regalos" class="bg-regalos">
             <div class="regalos-overlay" data-aos="flip-left">
                 <h2>Regalos</h2>
-                <p>Si deseas hacernos un regalo, puedes hacer una transferencia a:</p>
-                <hr>
-                <p><strong>Banco Ejemplo</strong></p>
-                <p>Rut: 123456789</p>
-                <p>Cuenta: 123456789</p>
-                <p>Nombre: Nombre Apellido</p>
-                <p>Email: email de prueba</p>
-
+                <div style="text-align: center; margin-top: 20px;"></div>
+                <a href="https://milistadenovios.cl/lista/bastianymacarena" target="_blank" class="gift-button">
+                    Ver lista de regalos
+                </a>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Sección de poti -->
     <section id="poti">
         <div class="poti-container">
+            <img src="novios-draw.jpeg" alt="Imagen de poti" class="bg-poti">
             <div class="poti-overlay">
-                <p>
-                    <img src="Group 1.svg" alt="Imagen de poti" class="bg-poti">
-                </p>
-                Agradecemos su presencia en este día tan especial para nosotros.
+                <p>Agradecemos su presencia en este día tan especial para nosotros.</p>
                 <p>Esperamos que disfruten de la celebración y que se lleven los mejores recuerdos de este día.</p>
                 <p>¡Nos vemos en la fiesta!</p>
                 <hr>
@@ -231,6 +226,7 @@
 
 </html>
 
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 <script>
     AOS.init({
         // Global settings:
@@ -253,5 +249,48 @@
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'bottom-top', // defines which position of the element regarding to window should trigger the animation
 
+    });
+
+    const count = 200,
+        defaults = {
+            origin: { y: 0.7 },
+        };
+
+    function fire(particleRatio, opts) {
+        confetti(
+            Object.assign({}, defaults, opts, {
+                particleCount: Math.floor(count * particleRatio),
+            })
+        );
+    }
+
+    const potiSection = document.querySelector('#poti');
+    potiSection.addEventListener('mouseenter', () => {
+        fire(0.25, {
+            spread: 26,
+            startVelocity: 55,
+        });
+
+        fire(0.2, {
+            spread: 60,
+        });
+
+        fire(0.35, {
+            spread: 100,
+            decay: 0.91,
+            scalar: 0.8,
+        });
+
+        fire(0.1, {
+            spread: 120,
+            startVelocity: 25,
+            decay: 0.92,
+            scalar: 1.2,
+        });
+
+        fire(0.1, {
+            spread: 120,
+            startVelocity: 45,
+        });
     });
 </script>
