@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Invitación de Boda</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tangerine:wght@400;700&display=swap"
-        rel="stylesheet">
+    <title>Boda Macarena y Bastian</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- aos effect-->
+    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -20,7 +26,7 @@
     <!-- Sección de Bienvenida -->
     <section id="bienvenida" data-aos="fade">
         <div class="bienvenida-container">
-            <img src="rings.png" alt="Imagen de los novios" class="bg-invitation">
+            <img src="images/rings.png" alt="Imagen de los novios" class="bg-invitation">
             <div class="bienvenida-overlay">
                 <h5 data-aos="fade-down">Nos agrada invitarte al paso más importante de nuestras vidas</h5>
                 <div class="nombres">
@@ -37,7 +43,7 @@
     <!-- Sección de Fecha -->
     <section id="fecha">
         <div class="fecha-container">
-            <img src="weddingBG-picaai.png" alt="Imagen de fecha" class="bg-gray">
+            <img src="images/weddingBG-picaai.png" alt="Imagen de fecha" class="bg-gray">
             <div class="fecha-overlay" data-aos="fade">
                 <h2>Te esperamos el día</h2>
                 <div>
@@ -45,7 +51,7 @@
                     <p data-aos="zoom-in-down">14</p>
                     <span>Noviembre 2025</span>
                 </div>
-                <div data-aos="zoom-in">
+                <div>
                     <hr>
                     <span>La hora de llegada es a las 18:00 hrs</span>
                 </div>
@@ -56,30 +62,31 @@
     <!-- Sección de Lugar del Evento -->
     <section id="lugar">
         <div class="ubicacion-container">
-            <img src="weddingBG2-picaai.png" alt="Imagen de ubicacion" class="bg-ubicacion">
+            <img src="images/weddingBG2-picaai.png" alt="Imagen de ubicacion" class="bg-ubicacion">
             <div class="ubicacion-overlay">
                 <h2 data-aos="fade">Lugar del Evento</h2>
-                <p data-aos="fade">Camino a lonquén 9598</p>
-                <p data-aos="fade">Calera de tango</p>
-                <a href="https://maps.app.goo.gl/LM7FbBvCk7qEDuqp9" target="_blank">
-                    <img src="mapsicon.png" alt="Imagen del lugar del evento" class="mapsicon-image" data-aos="flip-up">
-                </a>
-                <h2 data-aos="fade">Esperamos tu confirmación</h2>
-                <div class="contact-us" data-aos="fade-left">
-                    <h4>Hablar con el novio</h4>
-                    <a href="https://wa.me/+56974902207">
-                        <img src="wspp.jpg" alt="WhatsApp Icon"
-                            style="width: 20px; height: 20px; vertical-align: middle;">
-                        +569 7490 2207
+                <p data-aos="fade">Camino a lonquén 9598, Calera de tango</p>
+
+                <div class="mapsicon-container" data-aos="fade-up">
+                    <a href="https://maps.app.goo.gl/LM7FbBvCk7qEDuqp9" target="_blank">
+                        <img src="images/mapsicon.png" alt="Imagen del lugar del evento" class="mapsicon-image">
+                    </a>
+                    <a href="https://www.waze.com/en/live-map/directions/cl/region-metropolitana/av.-lonquen-9598?place=ChIJiY-tJMrdYpYRlcfLTDHFwjU"
+                        target="_blank">
+                        <img src="images/waze.svg" alt="Imagen del lugar del evento" class="mapsicon-image">
                     </a>
                 </div>
-                <div class="contact-us" data-aos="fade-right">
-                    <h4>Hablar con la novia</h4>
-                    <a href="https://wa.me/+56974902207">
-                        <img src="wspp.jpg" alt="WhatsApp Icon"
-                            style="width: 20px; height: 20px; vertical-align: middle;">
-                        +569 7490 2207
-                    </a>
+
+                <h3 data-aos="fade">Esperamos tu confirmación</h3>
+                <div class="confirmacion-container">
+                    <button class="modern-button novio-button"
+                        onclick="window.open('https://wa.me/+56974902207', '_blank')" data-aos="fade-left">
+                        Hablar con el novio
+                    </button>
+                    <button class="modern-button novia-button"
+                        onclick="window.open('https://wa.me/+56998126903', '_blank')" data-aos="fade-right">
+                        Hablar con la novia
+                    </button>
                 </div>
             </div>
         </div>
@@ -88,9 +95,10 @@
     <!-- Sección de itinerario -->
     <section id="itinerario">
         <div class="itinerario-container">
-            <img src="planning.png" alt="Imagen de itinerario" class="bg-itinerario">
+            <img src="images/planning.png" alt="Imagen de itinerario" class="bg-itinerario">
             <div class="itinerario-overlay">
                 <p class="itinerario-title" data-aos="fade-down">Itinerario</p>
+                <h5 class="itinerario-subtitle" data-aos="fade-up">(Los horarios están sujetos a modificación)</h5>
                 <div class="timeline" data-aos="fade-up">
                     <div class="timeline-item">
                         <div class="timeline-content">
@@ -106,7 +114,7 @@
                             <p>Ceremonia</p>
                         </div>
                         <div class="timeline-image">
-                            <img src="anillos.svg" alt="Icono ceremonia">
+                            <img src="images/anillos.svg" alt="Icono ceremonia">
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -116,7 +124,7 @@
                             <small>45 min aprox</small>
                         </div>
                         <div class="timeline-image">
-                            <img src="coctel.svg" alt="Icono coctel">
+                            <img src="images/coctel.svg" alt="Icono coctel">
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -126,7 +134,7 @@
                             <small>60 a 90 min aprox</small>
                         </div>
                         <div class="timeline-image">
-                            <img src="cena.svg" alt="Icono cena">
+                            <img src="images/cena.svg" alt="Icono cena">
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -135,7 +143,7 @@
                             <p>Baile</p>
                         </div>
                         <div class="timeline-image">
-                            <img src="baile.svg" alt="Icono baile">
+                            <img src="images/baile.svg" alt="Icono baile">
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -144,7 +152,7 @@
                             <p>Torta</p>
                         </div>
                         <div class="timeline-image">
-                            <img src="pastel.svg" alt="Icono torta">
+                            <img src="images/pastel.svg" alt="Icono torta">
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -164,7 +172,7 @@
     <!-- sección dress code-->
     <section id="dresscode">
         <div class="dresscode-container">
-            <img src="bg-clothes-picaai.png" alt="Imagen de dresscode" class="bg-dresscode">
+            <img src="images/bg-clothes-picaai.png" alt="Imagen de dresscode" class="bg-dresscode">
             <div class="dresscode-overlay">
                 <h2 data-aos="fade">Dress Code</h2>
                 <h3 data-aos="fade">Cóctel</h3>
@@ -196,10 +204,14 @@
     <!-- Sección de Regalos -->
     <section id="regalos">
         <div class="regalos-container">
-            <img src="bg-gift.png" alt="Imagen de regalos" class="bg-regalos">
+            <img src="images/bg-gift.png" alt="Imagen de regalos" class="bg-regalos">
             <div class="regalos-overlay" data-aos="flip-left">
                 <h2>Regalos</h2>
-                <div style="text-align: center; margin-top: 20px;"></div>
+                <p class="gift-message">
+                    Estamos profundamente agradecidos por el cariño y generosidad que nos brindan en este día tan
+                    especial. Si desean hacernos un regalo, hemos preparado una lista con algunas opciones que nos
+                    ayudarán a comenzar esta nueva etapa juntos
+                </p>
                 <a href="https://milistadenovios.cl/lista/bastianymacarena" target="_blank" class="gift-button">
                     Ver lista de regalos
                 </a>
@@ -211,7 +223,7 @@
     <!-- Sección de poti -->
     <section id="poti">
         <div class="poti-container">
-            <img src="novios-draw.jpeg" alt="Imagen de poti" class="bg-poti">
+            <img src="images/novios-draw.jpeg" alt="Imagen de poti" class="bg-poti">
             <div class="poti-overlay">
                 <p>Agradecemos su presencia en este día tan especial para nosotros.</p>
                 <p>Esperamos que disfruten de la celebración y que se lleven los mejores recuerdos de este día.</p>
@@ -227,70 +239,4 @@
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-<script>
-    AOS.init({
-        // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
-        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
-        delay: 0, // values from 0 to 3000, with step 50ms
-        duration: 1500, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'bottom-top', // defines which position of the element regarding to window should trigger the animation
-
-    });
-
-    const count = 200,
-        defaults = {
-            origin: { y: 0.7 },
-        };
-
-    function fire(particleRatio, opts) {
-        confetti(
-            Object.assign({}, defaults, opts, {
-                particleCount: Math.floor(count * particleRatio),
-            })
-        );
-    }
-
-    const potiSection = document.querySelector('#poti');
-    potiSection.addEventListener('mouseenter', () => {
-        fire(0.25, {
-            spread: 26,
-            startVelocity: 55,
-        });
-
-        fire(0.2, {
-            spread: 60,
-        });
-
-        fire(0.35, {
-            spread: 100,
-            decay: 0.91,
-            scalar: 0.8,
-        });
-
-        fire(0.1, {
-            spread: 120,
-            startVelocity: 25,
-            decay: 0.92,
-            scalar: 1.2,
-        });
-
-        fire(0.1, {
-            spread: 120,
-            startVelocity: 45,
-        });
-    });
-</script>
+<script src="js/index.js"></script>
