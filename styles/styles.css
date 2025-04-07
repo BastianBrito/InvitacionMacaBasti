@@ -415,22 +415,74 @@ body {
     /* Beige pastel */
 }
 
-.dresscode-overlay p {
-    font-size: 1.5rem;
-    font-family: 'Charmonman', sans-serif;
+.dresscode-text {
+    max-height: 14rem;
+    overflow-y: auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.dresscode-text p {
+    font-size: 1rem;
     margin: 15px;
+    font-weight: bold;
+}
+
+.dresscode-text span {
+    font-size: 1rem;
+    margin: 15px;
+    text-align: justify;
+}
+
+.color-palette h4 {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.color-palette-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.color-palette {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
-.dresscode-text {
-    max-height: 6em;
-    overflow-y: auto;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    line-height: 1.2em;
-    word-wrap: break-word;
-    font-family: 'Charmonman', sans-serif;
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dress-option-button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dress-option-button:hover {
+    background-color: white;
+    color: #d4b28a;
+    /* Color de texto similar al hover del botón de regalos */
 }
 
 /* Sección de Regalos */
