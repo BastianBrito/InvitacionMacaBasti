@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(70%);
     /* Oscurece la imagen para resaltar el contenido */
 }
 
@@ -138,7 +138,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(70%);
     /* Oscurece la imagen para resaltar el contenido */
 }
 
@@ -155,12 +155,13 @@ body {
     font-weight: 300;
     letter-spacing: 0.5px;
 }
-
 .ubicacion-overlay h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: 'Charmonman', sans-serif;
     font-weight: 300;
     letter-spacing: 0.5px;
+    color: rgb(241, 239, 83);
+    border-bottom: rgb(241, 239, 83) 2px solid;
 }
 
 .ubicacion-overlay p {
@@ -226,7 +227,7 @@ body {
 }
 
 .novio-button {
-    background-color: rgba(0, 123, 255, 0.2);
+    background-color: rgba(0, 123, 255, 0.534);
     /* Azul transparente para el novio */
     transition: background-color 0.3s ease;
 }
@@ -238,7 +239,7 @@ body {
 }
 
 .novia-button {
-    background-color: rgba(232, 62, 140, 0.2);
+    background-color: rgba(232, 62, 141, 0.568);
     /* Rosa transparente para la novia */
     transition: background-color 0.3s ease;
 }
@@ -265,7 +266,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(50%);
     /* Oscurece la imagen para resaltar el contenido */
 }
 
@@ -390,7 +391,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(70%);
     /* Oscurece la imagen para resaltar el contenido */
 }
 
@@ -500,7 +501,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(70%);
     /* Oscurece la imagen para resaltar el contenido */
 }
 
